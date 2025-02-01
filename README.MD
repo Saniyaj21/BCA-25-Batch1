@@ -130,3 +130,70 @@ git merge <branch-name>
 - [GitHub Guides](https://guides.github.com/)
 - [Interactive Git Tutorial](https://learngitbranching.js.org/)
 
+
+```bash
+
+PS C:\Users\saniy\Desktop\personal\GIT-class> git branch
+* main
+PS C:\Users\saniy\Desktop\personal\GIT-class> git remote
+origin
+PS C:\Users\saniy\Desktop\personal\GIT-class> git branch test
+PS C:\Users\saniy\Desktop\personal\GIT-class> git branch
+* main
+  test
+PS C:\Users\saniy\Desktop\personal\GIT-class> git checkout test
+Switched to branch 'test'
+PS C:\Users\saniy\Desktop\personal\GIT-class> git branch
+  main
+* test
+PS C:\Users\saniy\Desktop\personal\GIT-class> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\saniy\Desktop\personal\GIT-class> git branch
+* main
+  test
+PS C:\Users\saniy\Desktop\personal\GIT-class> git checkout -b login
+Switched to a new branch 'login'
+PS C:\Users\saniy\Desktop\personal\GIT-class> git branch
+* login
+  main
+  test
+PS C:\Users\saniy\Desktop\personal\GIT-class> git checkout test
+Switched to branch 'test'
+PS C:\Users\saniy\Desktop\personal\GIT-class> git add .
+PS C:\Users\saniy\Desktop\personal\GIT-class> git status
+On branch test
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   text.html
+
+PS C:\Users\saniy\Desktop\personal\GIT-class> git commit -m "test file created"
+[test b2f9a95] test file created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.html
+PS C:\Users\saniy\Desktop\personal\GIT-class> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\saniy\Desktop\personal\GIT-class> git branch
+  login
+* main
+  test
+PS C:\Users\saniy\Desktop\personal\GIT-class> git checkout test
+Switched to branch 'test'
+PS C:\Users\saniy\Desktop\personal\GIT-class> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\saniy\Desktop\personal\GIT-class> git marge test
+git: 'marge' is not a git command. See 'git --help'.
+
+The most similar command is
+        merge
+PS C:\Users\saniy\Desktop\personal\GIT-class> git merge test
+Updating 5fa6f88..b2f9a95
+Fast-forward
+ text.html | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.html
+PS C:\Users\saniy\Desktop\personal\GIT-class> 
+```
+
